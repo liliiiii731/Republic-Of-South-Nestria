@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+	<style>
+		body {
+			background: linear-gradient(to bottom, #87CEFA, #98FB98);
+			font-family: Arial, sans-serif;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 600px;
+			margin: 50px auto;
+			padding: 20px;
+			background: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			border-radius: 5px;
+		}
+
+		h1 {
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		input[type="text"], input[type="email"], input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		}
+
+		input[type="submit"] {
+			background: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background 0.3s ease-in-out;
+		}
+
+		input[type="submit"]:hover {
+			background: #555;
+		}
+
+		.error {
+			color: red;
+			margin-bottom: 10px;
+		}
+
+		.header {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #fff;
+			padding: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+
+		.logo {
+			width: 50px;
+			height: 50px;
+			margin-right: 10px;
+		}
+
+		.title {
+			font-size: 24px;
+			font-weight: bold;
+			margin: 0;
+			text-align: center;
+		}
+
+		.footer {
+			margin-top: 50px;
+			text-align: center;
+			font-size: 18px;
+		}
+
+	</style>
+</head>
+<body>
+<form method="POST" action="főoldal.html">
+	
+
+	<div class="header">
+		<img src="flag.png" alt="South-Nestria flag" class="logo">
+		<h1 class="title">Registration Page</h1>
+	</div>
+
+	<div class="container">
+		<form action="#" method="post">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+
+			<input type="submit" value="Register">
+		</form>
+
+		<div class="error">
+			<!-- Error messages will be displayed here -->
+		</div>
+	</div>
+
+	<div class="header">
+		<h1 class="title">Republic of South-Nestria</h1>
+	</div>
+
+	<footer class="footer">
+		<p>&copy; 2023 All Rights Reserved.</p>
+	</footer>
+
+</body>
+</html>
+
